@@ -1,5 +1,6 @@
 # 桌面陪伴机器人环境部署文档
 
+
 本文适用于两类环境：
 
 - x86_64 Debian/Ubuntu 开发机：使用 ONNX Runtime 在 CPU 上推理。
