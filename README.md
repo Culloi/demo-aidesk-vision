@@ -1,4 +1,4 @@
-# RX-78 AI Desktop VISION
+# AI Desktop VISION
 
 [简体中文](README.zh-CN.md) | English
 
