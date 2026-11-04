@@ -1,0 +1,9 @@
+numpy>=1.24,<3
+opencv-python>=4.8,<5
+onnxruntime>=1.17,<2
+# 语音指令（SenseVoice 识别），没有模型文件时功能自动禁用，不影响其他功能
+# 模型不入库，见 README 「语音指令」节下载说明
+sherpa-onnx>=1.10
+# 锁定 Qt 6.8 LTS，只装 Essentials 精简包（QtCore/QtGui/QtWidgets/QtSvg）。
+# 不要用 PySide6 6.12.0：它在 Python 3.10 上有 None 引用计数 bug，界面运行几分钟后会闪退。
+PySide6-Essentials==6.8.3

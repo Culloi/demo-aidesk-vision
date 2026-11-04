@@ -1,0 +1,11 @@
+# RKNN 转换环境（x86 主机，Python 3.10），与应用的 .venv 分开：
+#   python3 -m venv .venv-rknn && source .venv-rknn/bin/activate
+#   pip install -r tools/requirements-rknn.txt -f https://mirrors.aliyun.com/pytorch-wheels/cpu/ -i https://mirrors.aliyun.com/pypi/simple/
+#
+# 版本必须与开发板的 NPU 运行库 librknnrt.so 一致（板子上是 2.3.2）
+rknn-toolkit2==2.3.2
+# rknn-toolkit2 2.3.2 用到 onnx.mapping，onnx 1.19 起已删除，会报
+#   AttributeError: module 'onnx' has no attribute 'mapping'
+onnx==1.16.1
+# CPU 版即可；不指定的话会装 CUDA 版，多下载约 2.5 GB
+torch==2.4.0+cpu
