@@ -1,4 +1,4 @@
-# RX-78 AI桌面视觉系统
+# AI桌面视觉系统
 
 简体中文 | [English](README.md)
 
